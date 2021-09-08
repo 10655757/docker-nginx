@@ -12,8 +12,9 @@
 - `yum -y clean all`
 - `systemctl start docker && systemctl enable docker`
 
-## Steps to deploy the project
-1. unzip `docker-nginix.zip` file 
-2. go to unpacked folder
+## Steps to run the project
+1. unzip `docker-nginix.zip` file to /home folder
+2. chenge current directory to unpacked folder
 3. run `ansible-playbook main.yml` 
-4. op
+4. open `http:/ip-address-of-host-machine` in web browser 
+5. you whould see the webage showing the date and time of `index.html` file's createtion
