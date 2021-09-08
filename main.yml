@@ -1,6 +1,8 @@
 ---
+# due to simplicity of task the playbook is creaeted as a single file
 - hosts: localhost
 
+# Ansible Galaxy and Commmunity Docker collection is used for building custom docker image and running container
   tasks:
   - name: Build docker image using Dockerfile
     community.docker.docker_image:
