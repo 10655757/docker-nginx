@@ -1,0 +1,23 @@
+---
+- hosts: localhost
+
+  tasks:
+  - name: Build docker image using Dockerfile
+    community.docker.docker_image:
+      name: nginx_image
+      build:
+        path: .
+        args:
+          listen_port: 80
+      source: build
+      tag: "v1"
+      push: no
+
+  - name: Run docker container with Nginx webserver
+    community.docker.docker_container: 
+      name: nginx_container
+      image: "nginx_image:v1"
+      container_default_behavior: no_defaults
+      ports:
+        - "80:80"
+      
