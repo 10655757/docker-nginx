@@ -1,13 +1,12 @@
 ---
-# due to simplicity of task the playbook is creaeted as a single file
-- hosts: localhost
-
+# Due to simplicity of task the playbook is created as a single file
 # Ansible Galaxy and Commmunity Docker collection is used for building custom docker image and running container
 
-# While writing the script the examples from Ansible khowledge base were used. Particularly the examples from following 2 links
-
+# While writing the script the examples from Ansible khowledge base were used. Particularly the examples from following 2 links:
 # 1. https://docs.ansible.com/ansible/latest/collections/community/docker/docker_image_module.html#examples
+# 2. https://docs.ansible.com/ansible/latest/collections/community/docker/docker_container_module.html#examples
 
+- hosts: localhost
 tasks:
   - name: Build docker image using Dockerfile
     community.docker.docker_image:
@@ -20,8 +19,7 @@ tasks:
       tag: "v1"
       push: no
 
-#2. https://docs.ansible.com/ansible/latest/collections/community/docker/docker_container_module.html#examples
-  - name: Run docker container with Nginx webserver
+- name: Run docker container with Nginx webserver
     community.docker.docker_container: 
       name: nginx_container
       image: "nginx_image:v1"
