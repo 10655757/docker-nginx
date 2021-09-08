@@ -13,7 +13,7 @@
 - `systemctl start docker && systemctl enable docker`
 
 ### Steps to run the project
-1. unzip `docker-nginix.zip` file to the `/home` folder of host machine
+1. unzip `docker-nginx.zip` file to the `/home` folder of host machine
 2. change current directory to unpacked folder
 3. run `ansible-playbook main.yml` 
 4. open `http:/ip-address-of-host-machine` in web browser 
