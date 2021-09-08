@@ -1,4 +1,4 @@
-# docker with nginx
+# Docker container with CentOS 7 and running nginx
 
 ## Prerequisites for host machine
 1. Centos 7
@@ -12,9 +12,9 @@
 - `yum -y clean all`
 - `systemctl start docker && systemctl enable docker`
 
-## Steps to run the project
+### Steps to run the project
 1. unzip `docker-nginix.zip` file to /home folder
 2. chenge current directory to unpacked folder
 3. run `ansible-playbook main.yml` 
 4. open `http:/ip-address-of-host-machine` in web browser 
-5. you whould see the webage showing the date and time of `index.html` file's createtion
+5. you should see the webpage showing the date and time of `index.html` file createtion
