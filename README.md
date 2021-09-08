@@ -13,5 +13,5 @@
 - `systemctl start docker && systemctl enable docker`
 
 ## Steps to deploy the project
-1. unzip docker-nginix.zip file 
-2. execute ansible-playbook main.yml 
+1. unzip `docker-nginix.zip` file 
+2. run `ansible-playbook main.yml` 
