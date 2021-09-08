@@ -2,7 +2,7 @@
 
 ## Prerequisites for host machine
 1. CentOS 7
-2. Docker, Docker SDK for Python, Ansible, Docker Community Collection,  
+2. Docker, Docker SDK for Python, Ansible, Docker Community Collection
 
 ### Run following commands nn CentOS host machine 
 - `yum -y install epel-release && yum -y update`
@@ -17,4 +17,4 @@
 2. change current directory to unpacked folder
 3. run `ansible-playbook main.yml` 
 4. open `http:/ip-address-of-host-machine` in web browser 
-5. you should see the webpage showing the date and time of `index.html` file createtion
+5. you should see the webpage showing the date and time of `index.html` file creation in `DD-MMM-YYYY HH:MM` format
