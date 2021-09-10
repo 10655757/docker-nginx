@@ -4,7 +4,7 @@
 1. CentOS 7
 2. Docker, Docker SDK for Python, Ansible, Docker Community Collection
 
-### Run following commands nn CentOS host machine 
+### Run following commands on CentOS host machine 
 - `yum -y install epel-release && yum -y update`
 - `yum -y install docker python-docker-py`
 - `yum -y install ansible`
